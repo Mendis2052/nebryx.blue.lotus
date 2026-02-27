@@ -47,14 +47,46 @@
                 <!-- Desktop Menu -->
                 <div class="hidden md:ml-6 md:flex md:space-x-8 items-center">
                     <a href="index.html" class="text-slate-300 hover:text-brand-blue transition-colors">Home</a>
+                    <a href="about.html" class="text-slate-300 hover:text-brand-blue transition-colors relative group">
+                        About Us
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full"></span>
+                    </a>
                     <a href="vehicles.html"
                         class="text-brand-blue font-semibold hover:text-white transition-colors relative">
                         Vehicles
                         <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-brand-blue"></span>
                     </a>
-                    <a href="parts.html" class="text-slate-300 hover:text-brand-blue transition-colors">Parts &
-                        Accessories</a>
+                    <a href="parts.html" class="text-slate-300 hover:text-brand-blue transition-colors relative group">
+                        Parts & Accessories
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="index.html#contact"
+                        class="px-6 py-2.5 rounded-full bg-brand-blue/10 border border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white transition-all duration-300">
+                        Contact Us
+                    </a>
                 </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden glass-panel border-t border-slate-700/50 absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-slate-300 hover:text-white font-medium">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-slate-300 hover:text-white font-medium">About Us</a>
+                <a href="vehicles.html" class="block px-3 py-2 text-brand-blue font-medium">Vehicles</a>
+                <a href="parts.html" class="block px-3 py-2 text-slate-300 hover:text-white font-medium">Parts</a>
+                <a href="index.html#contact"
+                    class="block px-3 py-2 text-slate-300 hover:text-white font-medium">Contact</a>
             </div>
         </div>
     </nav>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Nebryx Blue Lotus LTD</title>
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0ea5e9',
+                            dark: '#0f172a',
+                            panel: 'rgba(30, 41, 59, 0.7)'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-dark text-slate-300 antialiased selection:bg-brand-blue selection:text-white pt-20">
+
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 w-full z-50 glass-panel border-b border-slate-700/50 transition-all duration-300 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img class="h-10 w-10 object-cover rounded-full border border-brand-blue shadow-[0_0_10px_rgba(14,165,233,0.5)]"
+                        src="images/logo.png" alt="Nebryx Logo">
+                    <span class="text-xl font-bold tracking-wider text-white">NEBRYX</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:ml-6 md:flex md:space-x-8 items-center">
+                    <a href="index.html" class="text-slate-300 hover:text-brand-blue transition-colors">Home</a>
+                    <a href="about.html"
+                        class="text-brand-blue font-semibold hover:text-white transition-colors relative">
+                        About Us
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-brand-blue"></span>
+                    </a>
+                    <a href="vehicles.html"
+                        class="text-slate-300 hover:text-brand-blue transition-colors relative group">
+                        Vehicles
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="parts.html" class="text-slate-300 hover:text-brand-blue transition-colors relative group">
+                        Parts & Accessories
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="index.html#contact"
+                        class="px-6 py-2.5 rounded-full bg-brand-blue/10 border border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white transition-all duration-300">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden glass-panel border-t border-slate-700/50 absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-slate-300 hover:text-white font-medium">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-brand-blue font-medium">About Us</a>
+                <a href="vehicles.html" class="block px-3 py-2 text-slate-300 hover:text-white font-medium">Vehicles</a>
+                <a href="parts.html" class="block px-3 py-2 text-slate-300 hover:text-white font-medium">Parts</a>
+                <a href="index.html#contact"
+                    class="block px-3 py-2 text-slate-300 hover:text-white font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="py-24 relative overflow-hidden bg-[#0b1120]">
+        <!-- Abstract BG elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-blue/10 rounded-full blur-[100px] pointer-events-none">
+        </div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none">
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 uppercase tracking-tight">
+                About <span class="text-gradient">Nebryx</span> Blue Lotus
+            </h1>
+            <p class="text-xl text-slate-400 leading-relaxed font-light">
+                Setting a new paradigm in the automotive industry by merging premium vehicle acquisitions with global
+                parts distribution networks.
+            </p>
+        </div>
+    </header>
+
+    <!-- Our Story Section -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 reveal-on-scroll opacity-0">
+                    <div
+                        class="relative rounded-2xl overflow-hidden group border border-slate-700/50 shadow-[0_0_40px_rgba(14,165,233,0.15)] bg-slate-800">
+                        <img src="images/logo.png" alt="Nebryx Blue Lotus Core"
+                            class="w-full object-contain h-[400px] p-10 transition-transform duration-700 group-hover:scale-110 drop-shadow-[0_0_30px_rgba(14,165,233,0.8)]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent">
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 reveal-on-scroll opacity-0 delay-200">
+                    <h2 class="text-sm font-bold tracking-widest text-brand-blue uppercase mb-2">Our Foundation</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">A Legacy of Quality & Trust</h3>
+                    <p class="text-slate-400 text-lg mb-6 leading-relaxed">
+                        Nebryx Blue Lotus LTD was founded on a simple principle: to offer an uncompromised standard of
+                        excellence across multiple sectors of the automotive trade. We span across premium light motor
+                        vehicles, reliable commercial fleets, and an extensive catalog of wholesale and retail auto
+                        parts.
+                    </p>
+                    <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                        Operating under multi-faceted SIC classifications (45112, 45190, 45310, 45320), we possess the
+                        unique ability to cater to individual car enthusiasts, growing small businesses, and large-scale
+                        industrial garages—all under one unified, premium brand.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 pt-6 border-t border-slate-700/50">
+                        <div>
+                            <h4 class="text-3xl font-extrabold text-white mb-1"><span class="text-brand-blue">10+</span>
+                            </h4>
+                            <p class="text-sm text-slate-500">Years of Expertise</p>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-extrabold text-white mb-1"><span
+                                    class="text-brand-blue">Global</span></h4>
+                            <p class="text-sm text-slate-500">Logistics Network</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-[#0b1120] border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal-on-scroll">
+                <h2 class="text-3xl font-bold text-white">Our Core Ideologies</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 text-center reveal-on-scroll delay-100">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-blue/10 flex items-center justify-center mb-6">
+                        <i class="fas fa-gem text-2xl text-brand-blue"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Uncompromising Quality</h4>
+                    <p class="text-slate-400 text-sm">Every vehicle detailed, inspected, and verified. Every part
+                        sourced from highly reputable OEM and aftermarket manufacturers.</p>
+                </div>
+
+                <div
+                    class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 text-center reveal-on-scroll delay-200">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-blue/10 flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-2xl text-brand-blue"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Absolute Transparency</h4>
+                    <p class="text-slate-400 text-sm">Straightforward pricing, detailed vehicle histories, and honest
+                        consultation for both our retail and wholesale B2B partners.</p>
+                </div>
+
+                <div
+                    class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 text-center reveal-on-scroll delay-300">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-brand-blue/10 flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-2xl text-brand-blue"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Global Connectivity</h4>
+                    <p class="text-slate-400 text-sm">Our expansive logistics network ensures that whether you're
+                        purchasing a single accessory or a fleet of vans, delivery is swift and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer class="bg-brand-dark py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Nebryx Blue Lotus LTD. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

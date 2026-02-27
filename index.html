@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nebryx Blue Lotus LTD | Premium Motor Vehicles & Parts</title>
-    <meta name="description" content="Nebryx Blue Lotus LTD - Premier destination for luxury used cars, commercial vehicles, and high-end automotive parts and accessories.">
+    <meta name="description"
+        content="Nebryx Blue Lotus LTD - Premier destination for luxury used cars, commercial vehicles, and high-end automotive parts and accessories.">
     <!-- Tailwind CSS (CDN for quick setup without node/npm) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- Tailwind Config for custom colors within the CDN -->
     <script>
         tailwind.config = {
@@ -32,6 +34,7 @@
         }
     </script>
 </head>
+
 <body class="bg-brand-dark text-slate-300 antialiased selection:bg-brand-blue selection:text-white">
 
     <!-- Navigation -->
@@ -40,29 +43,42 @@
             <div class="flex justify-between h-20 items-center">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-3">
-                    <img class="h-12 w-12 object-cover rounded-full border-2 border-brand-blue shadow-[0_0_15px_rgba(14,165,233,0.5)]" src="images/logo.png" alt="Nebryx Blue Lotus Logo">
-                    <span class="text-2xl font-bold tracking-wider text-white">NEBRYX <span class="text-brand-blue">BLUE LOTUS</span></span>
+                    <img class="h-12 w-12 object-cover rounded-full border-2 border-brand-blue shadow-[0_0_15px_rgba(14,165,233,0.5)]"
+                        src="images/logo.png" alt="Nebryx Blue Lotus Logo">
+                    <span class="text-2xl font-bold tracking-wider text-white">NEBRYX <span class="text-brand-blue">BLUE
+                            LOTUS</span></span>
                 </div>
-                
+
                 <!-- Desktop Menu -->
                 <div class="hidden md:ml-6 md:flex md:space-x-8 items-center">
-                    <a href="index.html" class="text-brand-blue font-semibold hover:text-white transition-colors">Home</a>
-                    <a href="vehicles.html" class="text-slate-300 hover:text-brand-blue transition-colors relative group">
+                    <a href="index.html"
+                        class="text-brand-blue font-semibold hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="text-slate-300 hover:text-brand-blue transition-colors relative group">
+                        About Us
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="vehicles.html"
+                        class="text-slate-300 hover:text-brand-blue transition-colors relative group">
                         Vehicles
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full"></span>
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full"></span>
                     </a>
                     <a href="parts.html" class="text-slate-300 hover:text-brand-blue transition-colors relative group">
                         Parts & Accessories
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full"></span>
+                        <span
+                            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full"></span>
                     </a>
-                    <a href="#contact" class="px-6 py-2.5 rounded-full bg-brand-blue/10 border border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.4)]">
+                    <a href="#contact"
+                        class="px-6 py-2.5 rounded-full bg-brand-blue/10 border border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white transition-all duration-300 hover:shadow-[0_0_20px_rgba(14,165,233,0.4)]">
                         Contact Us
                     </a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="flex items-center md:hidden">
-                    <button type="button" id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none">
+                    <button type="button" id="mobile-menu-btn"
+                        class="text-slate-300 hover:text-white focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -73,6 +89,7 @@
         <div class="md:hidden hidden glass-panel border-t border-slate-700/50 absolute w-full" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index.html" class="block px-3 py-2 text-brand-blue font-medium">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-slate-300 hover:text-white font-medium">About Us</a>
                 <a href="vehicles.html" class="block px-3 py-2 text-slate-300 hover:text-white font-medium">Vehicles</a>
                 <a href="parts.html" class="block px-3 py-2 text-slate-300 hover:text-white font-medium">Parts</a>
                 <a href="#contact" class="block px-3 py-2 text-slate-300 hover:text-white font-medium">Contact</a>
@@ -83,10 +100,11 @@
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="images/hero.png" alt="Luxury Car Showroom" class="w-full h-full object-cover animate-fade-in transition-transform duration-[10s] hover:scale-105">
+            <img src="images/hero.png" alt="Luxury Car Showroom"
+                class="w-full h-full object-cover animate-fade-in transition-transform duration-[10s] hover:scale-105">
             <div class="absolute inset-0 hero-gradient"></div>
         </div>
-        
+
         <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16 animate-fade-in delay-100">
             <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 uppercase tracking-tight">
                 Redefining <span class="text-gradient">Automotive</span> Excellence
@@ -95,10 +113,12 @@
                 Your premier destination for luxury used vehicles, commercial fleets, and high-performance trade parts.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="vehicles.html" class="px-8 py-4 rounded-full bg-brand-blue text-white font-semibold hover:bg-sky-400 transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.6)] transform hover:-translate-y-1">
+                <a href="vehicles.html"
+                    class="px-8 py-4 rounded-full bg-brand-blue text-white font-semibold hover:bg-sky-400 transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.6)] transform hover:-translate-y-1">
                     Explore Vehicles
                 </a>
-                <a href="parts.html" class="px-8 py-4 rounded-full glass-panel text-white font-semibold hover:bg-white/10 transition-all duration-300 border border-slate-600 hover:border-brand-blue">
+                <a href="parts.html"
+                    class="px-8 py-4 rounded-full glass-panel text-white font-semibold hover:bg-white/10 transition-all duration-300 border border-slate-600 hover:border-brand-blue">
                     Browse Parts
                 </a>
             </div>
@@ -115,8 +135,10 @@
     <!-- Services Overview / SIC Codes interpretation -->
     <section id="services" class="py-24 bg-brand-dark relative">
         <!-- Abstract BG elements -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-blue/5 rounded-full blur-[100px] pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-blue/5 rounded-full blur-[100px] pointer-events-none">
+        </div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none">
+        </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-20 reveal-on-scroll opacity-0">
@@ -126,50 +148,70 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- SIC 45112 -->
-                <div class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 reveal-on-scroll opacity-0 delay-100 flex flex-col h-full">
-                    <div class="w-14 h-14 rounded-full bg-brand-blue/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div
+                    class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 reveal-on-scroll opacity-0 delay-100 flex flex-col h-full">
+                    <div
+                        class="w-14 h-14 rounded-full bg-brand-blue/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fas fa-car text-2xl text-brand-blue"></i>
                     </div>
                     <h4 class="text-xl font-bold text-white mb-3">Premium Used Vehicles</h4>
-                    <p class="text-slate-400 text-sm mb-6 flex-grow">Curated selection of light motor vehicles and premium used cars. Rigorously inspected for quality and performance. (SIC 45112)</p>
-                    <a href="vehicles.html" class="text-brand-blue font-medium hover:text-sky-300 mt-auto flex items-center gap-2">
-                        View Inventory <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">Curated selection of light motor vehicles and
+                        premium used cars. Rigorously inspected for quality and performance. (SIC 45112)</p>
+                    <a href="vehicles.html"
+                        class="text-brand-blue font-medium hover:text-sky-300 mt-auto flex items-center gap-2">
+                        View Inventory <i
+                            class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
                     </a>
                 </div>
 
                 <!-- SIC 45190 -->
-                <div class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 reveal-on-scroll opacity-0 delay-200 flex flex-col h-full">
-                    <div class="w-14 h-14 rounded-full bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div
+                    class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 reveal-on-scroll opacity-0 delay-200 flex flex-col h-full">
+                    <div
+                        class="w-14 h-14 rounded-full bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fas fa-truck text-2xl text-indigo-400"></i>
                     </div>
                     <h4 class="text-xl font-bold text-white mb-3">Commercial & Other</h4>
-                    <p class="text-slate-400 text-sm mb-6 flex-grow">Specialized sale of other motor vehicles including commercial fleets, vans, and utility vehicles tailored for business needs. (SIC 45190)</p>
-                    <a href="vehicles.html#commercial" class="text-indigo-400 font-medium hover:text-indigo-300 mt-auto flex items-center gap-2">
-                        Explore Fleets <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">Specialized sale of other motor vehicles including
+                        commercial fleets, vans, and utility vehicles tailored for business needs. (SIC 45190)</p>
+                    <a href="vehicles.html#commercial"
+                        class="text-indigo-400 font-medium hover:text-indigo-300 mt-auto flex items-center gap-2">
+                        Explore Fleets <i
+                            class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
                     </a>
                 </div>
 
                 <!-- SIC 45310 -->
-                <div class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 reveal-on-scroll opacity-0 delay-300 flex flex-col h-full">
-                    <div class="w-14 h-14 rounded-full bg-sky-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div
+                    class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 reveal-on-scroll opacity-0 delay-300 flex flex-col h-full">
+                    <div
+                        class="w-14 h-14 rounded-full bg-sky-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fas fa-cogs text-2xl text-sky-400"></i>
                     </div>
                     <h4 class="text-xl font-bold text-white mb-3">Wholesale Parts</h4>
-                    <p class="text-slate-400 text-sm mb-6 flex-grow">B2B wholesale trade of high-quality motor vehicle parts and engine accessories for garages and dealerships. (SIC 45310)</p>
-                    <a href="parts.html#wholesale" class="text-sky-400 font-medium hover:text-sky-300 mt-auto flex items-center gap-2">
-                        Partner With Us <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">B2B wholesale trade of high-quality motor vehicle
+                        parts and engine accessories for garages and dealerships. (SIC 45310)</p>
+                    <a href="parts.html#wholesale"
+                        class="text-sky-400 font-medium hover:text-sky-300 mt-auto flex items-center gap-2">
+                        Partner With Us <i
+                            class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
                     </a>
                 </div>
 
                 <!-- SIC 45320 -->
-                <div class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 reveal-on-scroll opacity-0 delay-[400ms] flex flex-col h-full">
-                    <div class="w-14 h-14 rounded-full bg-teal-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div
+                    class="glass-panel p-8 rounded-2xl hover-glow group border border-slate-700/50 reveal-on-scroll opacity-0 delay-[400ms] flex flex-col h-full">
+                    <div
+                        class="w-14 h-14 rounded-full bg-teal-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                         <i class="fas fa-shopping-bag text-2xl text-teal-400"></i>
                     </div>
                     <h4 class="text-xl font-bold text-white mb-3">Retail Parts & Accs.</h4>
-                    <p class="text-slate-400 text-sm mb-6 flex-grow">Direct-to-consumer retail trade of aesthetic accessories, performance upgrades, and essential car parts. (SIC 45320)</p>
-                    <a href="parts.html#retail" class="text-teal-400 font-medium hover:text-teal-300 mt-auto flex items-center gap-2">
-                        Shop Accessories <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">Direct-to-consumer retail trade of aesthetic
+                        accessories, performance upgrades, and essential car parts. (SIC 45320)</p>
+                    <a href="parts.html#retail"
+                        class="text-teal-400 font-medium hover:text-teal-300 mt-auto flex items-center gap-2">
+                        Shop Accessories <i
+                            class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
                     </a>
                 </div>
             </div>
@@ -181,26 +223,40 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2 reveal-on-scroll opacity-0">
-                    <div class="relative rounded-2xl overflow-hidden group border border-slate-700/50 shadow-[0_0_40px_rgba(14,165,233,0.15)]">
-                        <img src="images/used_cars.png" alt="Used Cars Display" class="w-full object-cover h-[500px] transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent"></div>
+                    <div
+                        class="relative rounded-2xl overflow-hidden group border border-slate-700/50 shadow-[0_0_40px_rgba(14,165,233,0.15)]">
+                        <img src="images/used_cars.png" alt="Used Cars Display"
+                            class="w-full object-cover h-[500px] transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent">
+                        </div>
                         <div class="absolute bottom-6 left-6">
-                            <span class="px-3 py-1 bg-brand-blue text-white text-xs font-bold rounded-full uppercase tracking-wide">Featured</span>
+                            <span
+                                class="px-3 py-1 bg-brand-blue text-white text-xs font-bold rounded-full uppercase tracking-wide">Featured</span>
                             <h3 class="text-2xl font-bold text-white mt-2">Pristine Vehicle Selection</h3>
                         </div>
                     </div>
                 </div>
                 <div class="lg:w-1/2 reveal-on-scroll opacity-0 delay-200">
-                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Drive the Standard<br><span class="text-slate-500">Exceed Expectations</span></h2>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Drive the Standard<br><span
+                            class="text-slate-500">Exceed Expectations</span></h2>
                     <p class="text-slate-400 text-lg mb-8 leading-relaxed">
-                        At Nebryx Blue Lotus, we bridge the gap between excellence and accessibility. Whether you are looking for a reliable daily driver, expanding your commercial fleet, or sourcing OEM parts for a rebuild, our inventory and logistics network ensure unparalleled quality.
+                        At Nebryx Blue Lotus, we bridge the gap between excellence and accessibility. Whether you are
+                        looking for a reliable daily driver, expanding your commercial fleet, or sourcing OEM parts for
+                        a rebuild, our inventory and logistics network ensure unparalleled quality.
                     </p>
                     <ul class="space-y-4 mb-8">
-                        <li class="flex items-center gap-3 text-slate-300"><i class="fas fa-check-circle text-brand-blue"></i> Multi-point inspection on all vehicles</li>
-                        <li class="flex items-center gap-3 text-slate-300"><i class="fas fa-check-circle text-brand-blue"></i> Authorized wholesale parts distributor</li>
-                        <li class="flex items-center gap-3 text-slate-300"><i class="fas fa-check-circle text-brand-blue"></i> Global logistics network for swift delivery</li>
+                        <li class="flex items-center gap-3 text-slate-300"><i
+                                class="fas fa-check-circle text-brand-blue"></i> Multi-point inspection on all vehicles
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300"><i
+                                class="fas fa-check-circle text-brand-blue"></i> Authorized wholesale parts distributor
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300"><i
+                                class="fas fa-check-circle text-brand-blue"></i> Global logistics network for swift
+                            delivery</li>
                     </ul>
-                    <a href="about.html" class="inline-flex items-center gap-2 text-brand-blue font-semibold hover:text-white transition-colors group">
+                    <a href="about.html"
+                        class="inline-flex items-center gap-2 text-brand-blue font-semibold hover:text-white transition-colors group">
                         Discover Our Story
                         <span class="w-8 h-0.5 bg-brand-blue group-hover:w-12 transition-all"></span>
                     </a>
@@ -215,29 +271,36 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2 space-y-4">
                     <div class="flex items-center gap-3 mb-4">
-                        <img class="h-10 w-10 object-cover rounded-full border border-brand-blue" src="images/logo.png" alt="Logo">
-                        <span class="text-xl font-bold text-white tracking-widest">NEBRYX <span class="text-brand-blue">BLUE LOTUS</span></span>
+                        <img class="h-10 w-10 object-cover rounded-full border border-brand-blue" src="images/logo.png"
+                            alt="Logo">
+                        <span class="text-xl font-bold text-white tracking-widest">NEBRYX <span
+                                class="text-brand-blue">BLUE LOTUS</span></span>
                     </div>
                     <p class="text-slate-400 text-sm max-w-md">
-                        Setting the benchmark in automotive sales, parts distribution, and commercial fleet management. Excellence, delivered globally.
+                        Setting the benchmark in automotive sales, parts distribution, and commercial fleet management.
+                        Excellence, delivered globally.
                     </p>
                     <div class="flex gap-4 pt-2">
-                        <a href="#" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-brand-blue hover:border-brand-blue transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-brand-blue hover:border-brand-blue transition-colors">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-brand-blue hover:border-brand-blue transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-brand-blue hover:border-brand-blue transition-colors">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-brand-blue hover:border-brand-blue transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-slate-400 hover:text-brand-blue hover:border-brand-blue transition-colors">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-sm">Quick Links</h4>
                     <ul class="space-y-2 text-sm text-slate-400">
-                        <li><a href="vehicles.html" class="hover:text-brand-blue transition-colors">Vehicle Inventory</a></li>
+                        <li><a href="vehicles.html" class="hover:text-brand-blue transition-colors">Vehicle
+                                Inventory</a></li>
                         <li><a href="parts.html" class="hover:text-brand-blue transition-colors">Parts Catalog</a></li>
                         <li><a href="#services" class="hover:text-brand-blue transition-colors">Our Divisions</a></li>
                         <li><a href="#" class="hover:text-brand-blue transition-colors">Terms of Trade</a></li>
@@ -253,7 +316,8 @@
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fas fa-envelope text-brand-blue"></i>
-                            <a href="mailto:info@nebryxbluelotus.com" class="hover:text-brand-blue">info@nebryxbluelotus.com</a>
+                            <a href="mailto:info@nebryxbluelotus.com"
+                                class="hover:text-brand-blue">info@nebryxbluelotus.com</a>
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fas fa-phone text-brand-blue"></i>
@@ -262,8 +326,9 @@
                     </ul>
                 </div>
             </div>
-            
-            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+
+            <div
+                class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
                 <p>&copy; <span id="currentYear"></span> Nebryx Blue Lotus LTD. All rights reserved.</p>
                 <div class="flex gap-4">
                     <span>SIC: 45112, 45190, 45310, 45320</span>
@@ -275,4 +340,5 @@
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
